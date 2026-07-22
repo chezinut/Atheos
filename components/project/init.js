@@ -216,7 +216,7 @@
 					branch = oX('#dialog form input[name="gitBranch"]').value();
 
 
-				if (path.indexOf('/') === 0 || path.match(/^[A-Za-z]:/)) {
+				if (path.indexOf('/') === 0) {
 					atheos.alert.show({
 						banner: 'Do you really want to create a project with an absolute path?',
 						data: path,
